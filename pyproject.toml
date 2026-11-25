@@ -49,12 +49,12 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=8",
-    "pytest-qt>=4.4",
-    "ruff>=0.6",
-    "mypy>=1.11",
+    "pytest>=9.2.0",
+    "pytest-qt>=4.5.0",
+    "ruff>=0.17.6",
+    "mypy>=2.4.1",
 ]
-build = ["pyinstaller>=6.6"]
+build = ["pyinstaller>=6.22.3"]
 
 [project.scripts]
 worlddata = "worlddata.cli:main"
