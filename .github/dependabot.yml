@@ -1,0 +1,19 @@
+version: 2
+
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      python-runtime:
+        patterns: ["pandas", "numpy", "scipy", "matplotlib", "PySide6", "pydantic", "PyYAML", "requests", "tenacity", "openpyxl", "pycountry"]
+      python-dev:
+        patterns: ["pytest", "pytest-qt", "ruff", "mypy", "pyinstaller"]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3

@@ -1,0 +1,105 @@
+name: Bug report
+description: Report a crash, a wrong value, a UI problem or a data-resolution issue.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please do not include
+        personal data. For security issues, use the Security tab instead of a
+        public issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A clear description of the problem.
+      placeholder: "Example: the Countries page shows the wrong source year for ..."
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App version and data build id
+      description: Shown in the status bar and on the About page, or in data/manifest.json.
+      placeholder: "v0.1.0 · build 20261125T185349Z"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: How are you running it?
+      options:
+        - Portable zip (WorldDataComparison.exe)
+        - From source
+        - Other / rebuilt locally
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11 24H2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Countries
+        2. Select ...
+        3. See ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: data
+    attributes:
+      label: If this is a data problem
+      description: Country, indicator, value, source year, expected value and the upstream URL.
+      placeholder: "Gini · Sweden · 29.3 · 2023 · expected 29.3 according to ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and screenshots
+      description: |
+        Attach screenshots and, if relevant, `selftest.log` (packaged) or the
+        output of a source run with `WDC_DEBUG=1`. Data-quality files
+        (`rejected.csv`, `unresolved.csv`) are also useful.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I am using the latest release or current `main`.
+          required: true
+        - label: I removed personal data from logs and screenshots.
+          required: true

@@ -1,0 +1,44 @@
+# Data sources. `redistributable` controls whether a public bundle may include the
+# source's observations (see the Data & Quality page and README).
+sources:
+  - id: worldbank
+    name: World Bank — World Development Indicators
+    homepage: https://data.worldbank.org/
+    license: CC BY 4.0
+    attribution: World Bank, World Development Indicators (https://data.worldbank.org)
+    redistributable: true
+
+  - id: worldbank_wgi
+    name: World Bank — Worldwide Governance Indicators
+    homepage: https://www.worldbank.org/en/publication/worldwide-governance-indicators
+    license: CC BY 4.0
+    attribution: Kaufmann, Kraay and Mastruzzi, Worldwide Governance Indicators (World Bank)
+    redistributable: true
+
+  - id: owid
+    name: Our World in Data
+    homepage: https://ourworldindata.org/
+    license: CC BY 4.0 (OWID processing; upstream series keep their own terms)
+    attribution: Our World in Data (https://ourworldindata.org), based on the listed upstream source
+    redistributable: true
+
+  - id: imf
+    name: IMF — World Economic Outlook (DataMapper)
+    homepage: https://www.imf.org/en/Publications/WEO
+    license: IMF terms of use (free with attribution)
+    attribution: International Monetary Fund, World Economic Outlook (https://www.imf.org/en/Publications/WEO)
+    redistributable: true
+
+  - id: derived
+    name: Derived from loaded indicators
+    homepage: ""
+    license: Inherits the terms of its inputs
+    attribution: Computed by WorldDataComparison from World Bank data
+    redistributable: true
+
+  - id: manual
+    name: Manual import
+    homepage: ""
+    license: User-supplied
+    attribution: Imported by the user
+    redistributable: false

@@ -1,0 +1,81 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build portable Windows release
+    runs-on: windows-latest
+    timeout-minutes: 60
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONUTF8: "1"
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev,build]"
+
+      - name: Refresh data from sources
+        run: python scripts/refresh_data.py --force --strict
+
+      - name: Validate data
+        run: python scripts/validate_data.py --strict
+
+      - name: Regenerate indicator and group catalogues
+        run: python tools/gen_docs.py
+
+      - name: Check documentation links
+        run: python tools/check_links.py
+
+      - name: Lint, test and package
+        shell: powershell
+        run: powershell -ExecutionPolicy Bypass -File build.ps1
+
+      - name: Write checksums
+        shell: powershell
+        run: |
+          $zip = Get-ChildItem "dist\WorldDataComparison-*.zip" | Select-Object -First 1
+          if (-not $zip) { throw "No release zip found" }
+          $hash = (Get-FileHash $zip.FullName -Algorithm SHA256).Hash.ToLower()
+          "$($zip.Name)  $hash" | Set-Content "dist\SHA256SUMS.txt" -Encoding ascii
+          Get-Content "dist\SHA256SUMS.txt"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WorldDataComparison-${{ github.ref_name }}
+          path: |
+            dist/WorldDataComparison-*.zip
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+
+      - name: Publish GitHub release
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: powershell
+        run: |
+          $tag = $env:GITHUB_REF_NAME
+          $zip = (Get-ChildItem "dist\WorldDataComparison-*.zip" | Select-Object -First 1).FullName
+          gh release create $tag $zip "dist\SHA256SUMS.txt" `
+            --title "WorldDataComparison $tag" `
+            --generate-notes

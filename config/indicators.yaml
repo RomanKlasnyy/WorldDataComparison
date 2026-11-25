@@ -1,0 +1,1073 @@
+# Indicator catalog. This file is the data contract: adding a series is a config change,
+# no code change. `hidden` rows exist only as inputs for derived indicators.
+#
+# source: worldbank | worldbank_wgi | owid | manual | derived
+# aggregation: median | mean | sum | weighted (population-weighted mean)
+# direction: true = higher is better, false = lower is better, null = neutral
+
+indicators:
+  # ---------------------------------------------------------------- Economy & trade
+  - id: gdp_nominal
+    name: GDP (nominal)
+    domain: Economy & trade
+    description: Gross domestic product at current market prices, US dollars.
+    unit: US$
+    source: worldbank
+    series: NY.GDP.MKTP.CD
+    higher_is_better: null
+    default_log: true
+    aggregation: sum
+    valid_min: 0
+    valid_max: 2.0e14
+    attribution: World Bank, World Development Indicators
+
+  - id: gdp_ppp
+    name: GDP (PPP)
+    domain: Economy & trade
+    description: Gross domestic product converted to international dollars using purchasing power parity rates.
+    unit: int$
+    source: worldbank
+    series: NY.GDP.MKTP.PP.CD
+    higher_is_better: null
+    default_log: true
+    aggregation: sum
+    valid_min: 0
+    valid_max: 2.0e14
+    attribution: World Bank, World Development Indicators
+
+  - id: gdp_per_capita
+    name: GDP per capita (nominal)
+    domain: Economy & trade
+    description: Gross domestic product divided by midyear population, current US dollars.
+    unit: US$/person
+    source: worldbank
+    series: NY.GDP.PCAP.CD
+    higher_is_better: true
+    default_log: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 300000
+    attribution: World Bank, World Development Indicators
+
+  - id: gdp_per_capita_ppp
+    name: GDP per capita (PPP)
+    domain: Economy & trade
+    description: GDP per capita converted to international dollars at purchasing power parity.
+    unit: int$/person
+    source: worldbank
+    series: NY.GDP.PCAP.PP.CD
+    higher_is_better: true
+    default_log: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 300000
+    attribution: World Bank, World Development Indicators
+
+  - id: gdp_growth
+    name: GDP growth (annual)
+    domain: Economy & trade
+    description: Annual growth rate of GDP at constant prices.
+    unit: "%"
+    source: worldbank
+    series: NY.GDP.MKTP.KD.ZG
+    higher_is_better: true
+    aggregation: median
+    valid_min: -100
+    valid_max: 200
+    attribution: World Bank, World Development Indicators
+
+  - id: inflation
+    name: Inflation (consumer prices)
+    domain: Economy & trade
+    description: Annual growth rate of the consumer price index.
+    unit: "%"
+    source: worldbank
+    series: FP.CPI.TOTL.ZG
+    higher_is_better: false
+    aggregation: median
+    valid_min: -100
+    valid_max: 100000
+    attribution: World Bank, World Development Indicators
+
+  - id: unemployment
+    name: Unemployment rate
+    domain: Economy & trade
+    description: Share of the labour force that is without work but available for and seeking employment (ILO modelled estimate).
+    unit: "%"
+    source: worldbank
+    series: SL.UEM.TOTL.ZS
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank / ILO, World Development Indicators
+
+  - id: govt_debt
+    name: General government gross debt
+    domain: Economy & trade
+    description: General government gross debt as a share of GDP (IMF WEO definition).
+    unit: "% of GDP"
+    source: imf
+    series: GGXWDG_NGDP
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 1000
+    attribution: IMF World Economic Outlook (via IMF DataMapper)
+
+  - id: fiscal_balance
+    name: Fiscal balance
+    domain: Economy & trade
+    description: General government net lending (+) or net borrowing (-) as a share of GDP.
+    unit: "% of GDP"
+    source: imf
+    series: GGXCNL_NGDP
+    higher_is_better: true
+    aggregation: median
+    valid_min: -100
+    valid_max: 100
+    attribution: IMF World Economic Outlook (via IMF DataMapper)
+
+  - id: current_account
+    name: Current account balance
+    domain: Economy & trade
+    description: Current account balance as a share of GDP.
+    unit: "% of GDP"
+    source: worldbank
+    series: BN.CAB.XOKA.GD.ZS
+    higher_is_better: null
+    aggregation: median
+    valid_min: -100
+    valid_max: 100
+    attribution: World Bank, World Development Indicators
+
+  - id: fdi_inflows
+    name: FDI net inflows
+    domain: Economy & trade
+    description: Foreign direct investment net inflows as a share of GDP.
+    unit: "% of GDP"
+    source: worldbank
+    series: BX.KLT.DINV.WD.GD.ZS
+    higher_is_better: null
+    aggregation: median
+    valid_min: -100
+    valid_max: 200
+    attribution: World Bank, World Development Indicators
+
+  - id: trade_openness
+    name: Trade openness
+    domain: Economy & trade
+    description: Sum of exports and imports of goods and services as a share of GDP.
+    unit: "% of GDP"
+    source: worldbank
+    series: NE.TRD.GNFS.ZS
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 500
+    attribution: World Bank, World Development Indicators
+
+  - id: gini
+    name: Gini index
+    domain: Economy & trade
+    description: Income inequality on a 0-100 scale; 0 means perfect equality. Survey years vary widely by country.
+    unit: index (0-100)
+    source: worldbank
+    series: SI.POV.GINI
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank, World Development Indicators
+
+  # ------------------------------------------------------------ Development & health
+  - id: hdi
+    name: Human Development Index
+    domain: Development & health
+    description: "Composite index of life expectancy, education and income (0-1). Derived index: correlates with its own components by construction."
+    unit: index (0-1)
+    source: owid
+    series: human-development-index
+    value_column: Human Development Index
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 1
+    attribution: UNDP Human Development Report (via Our World in Data)
+
+  - id: life_expectancy
+    name: Life expectancy at birth
+    domain: Development & health
+    description: Expected years of life at birth, both sexes.
+    unit: years
+    source: worldbank
+    series: SP.DYN.LE00.IN
+    higher_is_better: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank, World Development Indicators
+
+  - id: infant_mortality
+    name: Infant mortality
+    domain: Development & health
+    description: Deaths of infants under one year per 1,000 live births.
+    unit: per 1,000 births
+    source: worldbank
+    series: SP.DYN.IMRT.IN
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 300
+    attribution: World Bank, World Development Indicators
+
+  - id: maternal_mortality
+    name: Maternal mortality ratio
+    domain: Development & health
+    description: Maternal deaths per 100,000 live births (modelled estimate).
+    unit: per 100,000 births
+    source: worldbank
+    series: SH.STA.MMRT
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 3000
+    attribution: World Bank, World Development Indicators
+
+  - id: fertility_rate
+    name: Fertility rate
+    domain: Development & health
+    description: Total births per woman.
+    unit: births per woman
+    source: worldbank
+    series: SP.DYN.TFRT.IN
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 15
+    attribution: World Bank, World Development Indicators
+
+  - id: median_age
+    name: Median age
+    domain: Development & health
+    description: Median age of the population in years.
+    unit: years
+    source: owid
+    series: median-age
+    value_column: Median age
+    higher_is_better: null
+    aggregation: median
+    valid_min: 10
+    valid_max: 60
+    attribution: UN World Population Prospects (via Our World in Data)
+
+  - id: population
+    name: Population
+    domain: Development & health
+    description: Total population.
+    unit: people
+    source: worldbank
+    series: SP.POP.TOTL
+    higher_is_better: null
+    default_log: true
+    aggregation: sum
+    valid_min: 0
+    valid_max: 2.0e9
+    attribution: World Bank, World Development Indicators
+
+  - id: urban_population
+    name: Urban population
+    domain: Development & health
+    description: Share of the population living in urban areas.
+    unit: "%"
+    source: worldbank
+    series: SP.URB.TOTL.IN.ZS
+    higher_is_better: null
+    aggregation: weighted
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank, World Development Indicators
+
+  - id: physicians
+    name: Physicians per 1,000 people
+    domain: Development & health
+    description: Number of medical doctors per 1,000 people.
+    unit: per 1,000 people
+    source: worldbank
+    series: SH.MED.PHYS.ZS
+    higher_is_better: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 20
+    attribution: World Bank, World Development Indicators
+
+  - id: health_spending
+    name: Health expenditure
+    domain: Development & health
+    description: Current health expenditure as a share of GDP.
+    unit: "% of GDP"
+    source: worldbank
+    series: SH.XPD.CHEX.GD.ZS
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 30
+    attribution: World Bank, World Development Indicators
+
+  - id: overweight
+    name: Overweight prevalence (adults)
+    domain: Development & health
+    description: Share of adults with a body mass index of 25 or higher.
+    unit: "%"
+    source: worldbank
+    series: SH.STA.OWAD.ZS
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank / WHO, World Development Indicators
+
+  - id: undernourishment
+    name: Undernourishment
+    domain: Development & health
+    description: Share of the population whose food intake is insufficient for dietary energy requirements.
+    unit: "%"
+    source: worldbank
+    series: SN.ITK.DEFC.ZS
+    higher_is_better: false
+    aggregation: weighted
+    valid_min: 0
+    valid_max: 100
+    attribution: FAO (via World Bank), World Development Indicators
+
+  - id: water_access
+    name: Basic drinking water access
+    domain: Development & health
+    description: Share of the population using at least basic drinking water services.
+    unit: "%"
+    source: worldbank
+    series: SH.H2O.BASW.ZS
+    higher_is_better: true
+    aggregation: weighted
+    valid_min: 0
+    valid_max: 100
+    attribution: WHO/UNICEF JMP (via World Bank)
+
+  # ------------------------------------------------------------------------ Education
+  - id: mean_years_schooling
+    name: Mean years of schooling
+    domain: Education
+    description: Average years of schooling among adults aged 25 and over.
+    unit: years
+    source: owid
+    series: mean-years-of-schooling
+    value_column: Average years of schooling
+    higher_is_better: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 20
+    attribution: UNDP / Barro-Lee (via Our World in Data)
+
+  - id: expected_years_schooling
+    name: Expected years of schooling
+    domain: Education
+    description: Years of schooling a child entering school can expect to receive.
+    unit: years
+    source: owid
+    series: expected-years-of-schooling
+    value_column: Both genders
+    higher_is_better: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 25
+    attribution: UNDP Human Development Report (via Our World in Data)
+
+  - id: literacy
+    name: Adult literacy rate
+    domain: Education
+    description: Share of people aged 15 and over who can read and write. Not reported by many high-income countries.
+    unit: "%"
+    source: worldbank
+    series: SE.ADT.LITR.ZS
+    higher_is_better: true
+    aggregation: weighted
+    valid_min: 0
+    valid_max: 100
+    attribution: UNESCO Institute for Statistics (via World Bank)
+
+  - id: education_spending
+    name: Education expenditure
+    domain: Education
+    description: Government expenditure on education as a share of GDP.
+    unit: "% of GDP"
+    source: worldbank
+    series: SE.XPD.TOTL.GD.ZS
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 30
+    attribution: UNESCO Institute for Statistics (via World Bank)
+
+  - id: tertiary_enrollment
+    name: Tertiary school enrollment
+    domain: Education
+    description: Gross enrollment ratio in tertiary education.
+    unit: "% gross"
+    source: worldbank
+    series: SE.TER.ENRR
+    higher_is_better: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 200
+    attribution: UNESCO Institute for Statistics (via World Bank)
+
+  - id: pisa_math
+    name: PISA mathematics score
+    domain: Education
+    description: Mean mathematics score of 15-year-olds in the OECD PISA assessment. Sparsely covered; requires manual import unless a snapshot is present.
+    unit: score (0-1000)
+    source: manual
+    series: pisa_math
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 1000
+    attribution: OECD PISA (manual import)
+
+  # -------------------------------------------------------------- Governance
+  - id: vdem_liberal_democracy
+    name: Liberal democracy index
+    domain: Governance & corruption
+    description: V-Dem Liberal Democracy Index (0-1). Derived index based on many component indices.
+    unit: index (0-1)
+    source: owid
+    series: liberal-democracy-index
+    value_column: Liberal democracy index
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 1
+    attribution: V-Dem Institute (via Our World in Data)
+
+  - id: vdem_electoral_democracy
+    name: Electoral democracy index
+    domain: Governance & corruption
+    description: V-Dem Electoral Democracy Index (0-1). Derived index.
+    unit: index (0-1)
+    source: owid
+    series: electoral-democracy-index
+    value_column: Electoral democracy index
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 1
+    attribution: V-Dem Institute (via Our World in Data)
+
+  - id: cpi
+    name: Corruption Perceptions Index
+    domain: Governance & corruption
+    description: Transparency International CPI, 0 (highly corrupt) to 100 (very clean). Derived from expert and business surveys.
+    unit: index (0-100)
+    source: owid
+    series: corruption-perception-index
+    value_column: Corruption Perceptions Index
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: Transparency International (via Our World in Data)
+
+  - id: press_freedom
+    name: Press Freedom Index
+    domain: Governance & corruption
+    description: RSF Press Freedom Index. Values in this historical series follow the pre-2022 scale, where lower is better.
+    unit: index (0-100)
+    source: owid
+    series: press-freedom-index-rsf
+    value_column: Press Freedom Index
+    higher_is_better: false
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: Reporters Without Borders (via Our World in Data)
+
+  - id: wgi_control_corruption
+    name: Control of corruption (WGI)
+    domain: Governance & corruption
+    description: World Bank Worldwide Governance Indicators percentile rank, 0-100, higher is better.
+    unit: percentile (0-100)
+    source: worldbank_wgi
+    series: GOV_WGI_CC.SC
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank Worldwide Governance Indicators
+
+  - id: wgi_rule_of_law
+    name: Rule of law (WGI)
+    domain: Governance & corruption
+    description: World Bank Worldwide Governance Indicators percentile rank, 0-100, higher is better.
+    unit: percentile (0-100)
+    source: worldbank_wgi
+    series: GOV_WGI_RL.SC
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank Worldwide Governance Indicators
+
+  - id: wgi_govt_effectiveness
+    name: Government effectiveness (WGI)
+    domain: Governance & corruption
+    description: World Bank Worldwide Governance Indicators percentile rank, 0-100, higher is better.
+    unit: percentile (0-100)
+    source: worldbank_wgi
+    series: GOV_WGI_GE.SC
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank Worldwide Governance Indicators
+
+  - id: wgi_political_stability
+    name: Political stability (WGI)
+    domain: Governance & corruption
+    description: World Bank Worldwide Governance Indicators percentile rank, 0-100, higher is better.
+    unit: percentile (0-100)
+    source: worldbank_wgi
+    series: GOV_WGI_PV.SC
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank Worldwide Governance Indicators
+
+  - id: wgi_voice_accountability
+    name: Voice and accountability (WGI)
+    domain: Governance & corruption
+    description: World Bank Worldwide Governance Indicators percentile rank, 0-100, higher is better.
+    unit: percentile (0-100)
+    source: worldbank_wgi
+    series: GOV_WGI_VA.SC
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank Worldwide Governance Indicators
+
+  - id: women_in_parliament
+    name: Women in parliament
+    domain: Governance & corruption
+    description: Share of seats held by women in national parliaments.
+    unit: "%"
+    source: worldbank
+    series: SG.GEN.PARL.ZS
+    higher_is_better: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: Inter-Parliamentary Union (via World Bank)
+
+  - id: freedom_house
+    name: Freedom House score
+    domain: Governance & corruption
+    description: Freedom in the World aggregate score (0-100). Requires manual import; see README.
+    unit: index (0-100)
+    source: manual
+    series: freedom_house
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: Freedom House, Freedom in the World (manual import)
+
+  # --------------------------------------------------------------- Environment
+  - id: co2_per_capita
+    name: CO2 emissions per capita
+    domain: Environment & energy
+    description: Carbon dioxide emissions excluding land-use change, tonnes per person.
+    unit: t CO2e/person
+    source: worldbank
+    series: EN.GHG.CO2.PC.CE.AR5
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank, World Development Indicators
+
+  - id: co2_total
+    name: CO2 emissions (total)
+    domain: Environment & energy
+    description: Total carbon dioxide emissions excluding land-use change, million tonnes.
+    unit: Mt CO2e
+    source: worldbank
+    series: EN.GHG.CO2.MT.CE.AR5
+    higher_is_better: false
+    default_log: true
+    aggregation: sum
+    valid_min: 0
+    valid_max: 50000
+    attribution: World Bank, World Development Indicators
+
+  - id: renewable_electricity
+    name: Renewable electricity share
+    domain: Environment & energy
+    description: Renewable electricity output as a share of total electricity output.
+    unit: "%"
+    source: worldbank
+    series: EG.ELC.RNEW.ZS
+    higher_is_better: true
+    aggregation: weighted
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank / IEA, World Development Indicators
+
+  - id: renewable_energy_consumption
+    name: Renewable energy consumption share
+    domain: Environment & energy
+    description: Renewable energy consumption as a share of total final energy consumption.
+    unit: "%"
+    source: worldbank
+    series: EG.FEC.RNEW.ZS
+    higher_is_better: true
+    aggregation: weighted
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank / IEA, World Development Indicators
+
+  - id: energy_use_per_capita
+    name: Energy use per capita
+    domain: Environment & energy
+    description: Energy use in kilograms of oil equivalent per person.
+    unit: kg oil eq/person
+    source: worldbank
+    series: EG.USE.PCAP.KG.OE
+    higher_is_better: null
+    default_log: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100000
+    attribution: World Bank / IEA, World Development Indicators
+
+  - id: forest_cover
+    name: Forest cover
+    domain: Environment & energy
+    description: Forest area as a share of land area.
+    unit: "% of land"
+    source: worldbank
+    series: AG.LND.FRST.ZS
+    higher_is_better: true
+    aggregation: weighted
+    valid_min: 0
+    valid_max: 100
+    attribution: FAO (via World Bank), World Development Indicators
+
+  - id: air_pollution_deaths
+    name: Air pollution mortality
+    domain: Environment & energy
+    description: Deaths per 100,000 people attributable to household and ambient air pollution.
+    unit: per 100,000
+    source: worldbank
+    series: SH.STA.AIRP.P5
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 500
+    attribution: WHO (via World Bank), World Development Indicators
+
+  - id: epi
+    name: Environmental Performance Index
+    domain: Environment & energy
+    description: Yale EPI score (0-100), higher is better. Requires manual import.
+    unit: index (0-100)
+    source: manual
+    series: epi
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: Yale Center for Environmental Law & Policy, EPI (manual import)
+
+  - id: nd_gain
+    name: Climate vulnerability (ND-GAIN)
+    domain: Environment & energy
+    description: Notre Dame Global Adaptation Initiative vulnerability score, 0-100, higher means more vulnerable. Requires manual import.
+    unit: index (0-100)
+    source: manual
+    series: nd_gain
+    higher_is_better: false
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: Notre Dame Global Adaptation Initiative (manual import)
+
+  # ------------------------------------------------------------------ Military
+  - id: military_spend_gdp
+    name: Military expenditure
+    domain: Military & security
+    description: Military expenditure as a share of GDP.
+    unit: "% of GDP"
+    source: worldbank
+    series: MS.MIL.XPND.GD.ZS
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: SIPRI (via World Bank), World Development Indicators
+
+  - id: military_spend_total
+    name: Military expenditure (total)
+    domain: Military & security
+    description: Military expenditure at current prices, US dollars.
+    unit: US$
+    source: worldbank
+    series: MS.MIL.XPND.CD
+    higher_is_better: null
+    default_log: true
+    aggregation: sum
+    valid_min: 0
+    valid_max: 3.0e12
+    attribution: SIPRI (via World Bank), World Development Indicators
+
+  - id: military_spend_per_capita
+    name: Military expenditure per capita
+    domain: Military & security
+    description: Military expenditure divided by population. Derived from total expenditure and population.
+    unit: US$/person
+    source: derived
+    derive:
+      op: ratio
+      numerator: military_spend_total
+      denominator: population
+      multiplier: 1.0
+    higher_is_better: null
+    default_log: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 20000
+    attribution: Derived from World Bank WDI
+
+  - id: armed_forces_per_1000
+    name: Armed forces personnel
+    domain: Military & security
+    description: Active armed forces personnel per 1,000 people. Derived from total personnel and population.
+    unit: per 1,000 people
+    source: derived
+    derive:
+      op: ratio
+      numerator: armed_forces_total
+      denominator: population
+      multiplier: 1000.0
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: Derived from World Bank WDI
+
+  - id: armed_forces_total
+    name: Armed forces personnel (total)
+    domain: Military & security
+    description: Total active armed forces personnel. Input for the per-capita derived indicator.
+    unit: people
+    source: worldbank
+    series: MS.MIL.TOTL.P1
+    hidden: true
+    default_log: true
+    aggregation: sum
+    valid_min: 0
+    valid_max: 3.0e7
+    attribution: World Bank, World Development Indicators
+
+  - id: gpi
+    name: Global Peace Index
+    domain: Military & security
+    description: IEP Global Peace Index, 1 (most peaceful) to 5 (least peaceful). Requires manual import.
+    unit: index (1-5)
+    source: manual
+    series: gpi
+    higher_is_better: false
+    is_composite: true
+    aggregation: median
+    valid_min: 1
+    valid_max: 5
+    attribution: Institute for Economics & Peace (manual import)
+
+  # -------------------------------------------------------------------- Society
+  - id: happiness
+    name: Life satisfaction
+    domain: Society & wellbeing
+    description: Mean self-reported life satisfaction on the Cantril ladder (0-10).
+    unit: index (0-10)
+    source: owid
+    series: happiness-cantril-ladder
+    value_column: Self-reported life satisfaction
+    higher_is_better: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 10
+    attribution: World Happiness Report / Gallup (via Our World in Data)
+
+  - id: gender_inequality
+    name: Gender Inequality Index
+    domain: Society & wellbeing
+    description: UNDP composite index of reproductive health, empowerment and labour market inequality (0-1, higher is worse).
+    unit: index (0-1)
+    source: owid
+    series: gender-inequality-index-from-the-human-development-report
+    value_column: Gender Inequality Index
+    higher_is_better: false
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 1
+    attribution: UNDP Human Development Report (via Our World in Data)
+
+  - id: voter_turnout
+    name: Voter turnout
+    domain: Society & wellbeing
+    description: Voter turnout as a share of registered voters in the most recent national election.
+    unit: "%"
+    source: owid
+    series: voter-turnout
+    value_column: Voter turnout of registered voters
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: International IDEA / V-Dem (via Our World in Data)
+
+  - id: homicide_rate
+    name: Homicide rate
+    domain: Society & wellbeing
+    description: Intentional homicides per 100,000 people.
+    unit: per 100,000
+    source: owid
+    series: homicide-rate-unodc
+    value_column: "Homicide rate per 100,000 population"
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 200
+    attribution: UNODC (via Our World in Data)
+
+  - id: suicide_rate
+    name: Suicide mortality
+    domain: Society & wellbeing
+    description: Suicide deaths per 100,000 people.
+    unit: per 100,000
+    source: worldbank
+    series: SH.STA.SUIC.P5
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: WHO (via World Bank), World Development Indicators
+
+  - id: social_progress
+    name: Social Progress Index
+    domain: Society & wellbeing
+    description: Social Progress Imperative composite score (0-100). Requires manual import.
+    unit: index (0-100)
+    source: manual
+    series: social_progress
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: Social Progress Imperative (manual import)
+
+  # --------------------------------------------------- Technology & infrastructure
+  - id: internet_users
+    name: Internet users
+    domain: Technology & infrastructure
+    description: Share of the population using the internet.
+    unit: "%"
+    source: worldbank
+    series: IT.NET.USER.ZS
+    higher_is_better: true
+    aggregation: weighted
+    valid_min: 0
+    valid_max: 100
+    attribution: ITU (via World Bank), World Development Indicators
+
+  - id: broadband
+    name: Fixed broadband subscriptions
+    domain: Technology & infrastructure
+    description: Fixed broadband subscriptions per 100 people.
+    unit: per 100 people
+    source: worldbank
+    series: IT.NET.BBND.P2
+    higher_is_better: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: ITU (via World Bank), World Development Indicators
+
+  - id: mobile_subs
+    name: Mobile subscriptions
+    domain: Technology & infrastructure
+    description: Mobile cellular subscriptions per 100 people.
+    unit: per 100 people
+    source: worldbank
+    series: IT.CEL.SETS.P2
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 300
+    attribution: ITU (via World Bank), World Development Indicators
+
+  - id: electricity_access
+    name: Electricity access
+    domain: Technology & infrastructure
+    description: Share of the population with access to electricity.
+    unit: "%"
+    source: worldbank
+    series: EG.ELC.ACCS.ZS
+    higher_is_better: true
+    aggregation: weighted
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank / IEA, World Development Indicators
+
+  - id: researchers
+    name: Researchers in R&D
+    domain: Technology & infrastructure
+    description: Researchers in research and development per million people.
+    unit: per million
+    source: worldbank
+    series: SP.POP.SCIE.RD.P6
+    higher_is_better: true
+    default_log: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 20000
+    attribution: UNESCO Institute for Statistics (via World Bank)
+
+  - id: patents_per_million
+    name: Patent applications
+    domain: Technology & infrastructure
+    description: Resident patent applications per million people. Derived from total applications and population.
+    unit: per million
+    source: derived
+    derive:
+      op: ratio
+      numerator: patents_resident
+      denominator: population
+      multiplier: 1000000.0
+    higher_is_better: true
+    default_log: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 5000
+    attribution: WIPO (via World Bank), derived
+
+  - id: patents_resident
+    name: Patent applications (total)
+    domain: Technology & infrastructure
+    description: Resident patent applications. Input for the per-million derived indicator.
+    unit: applications
+    source: worldbank
+    series: IP.PAT.RESD
+    hidden: true
+    default_log: true
+    aggregation: sum
+    valid_min: 0
+    valid_max: 2.0e6
+    attribution: WIPO (via World Bank)
+
+  - id: high_tech_exports
+    name: High-technology exports
+    domain: Technology & infrastructure
+    description: High-technology exports as a share of manufactured exports.
+    unit: "% of manufactured exports"
+    source: worldbank
+    series: TX.VAL.TECH.MF.ZS
+    higher_is_better: true
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank, World Development Indicators
+
+  - id: logistics_index
+    name: Logistics Performance Index
+    domain: Technology & infrastructure
+    description: World Bank LPI overall score, 1 (low) to 5 (high).
+    unit: index (1-5)
+    source: worldbank
+    series: LP.LPI.OVRL.XQ
+    higher_is_better: true
+    is_composite: true
+    aggregation: median
+    valid_min: 1
+    valid_max: 5
+    attribution: World Bank Logistics Performance Index
+
+  # --------------------------------------------------------------------- Labour
+  - id: lfpr
+    name: Labour force participation
+    domain: Labour
+    description: Share of the population aged 15+ that is in the labour force.
+    unit: "%"
+    source: worldbank
+    series: SL.TLF.CACT.ZS
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank / ILO, World Development Indicators
+
+  - id: female_lfpr
+    name: Female labour force participation
+    domain: Labour
+    description: Share of women aged 15+ that is in the labour force.
+    unit: "%"
+    source: worldbank
+    series: SL.TLF.CACT.FE.ZS
+    higher_is_better: null
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank / ILO, World Development Indicators
+
+  - id: youth_unemployment
+    name: Youth unemployment
+    domain: Labour
+    description: Unemployment rate among the labour force aged 15-24.
+    unit: "%"
+    source: worldbank
+    series: SL.UEM.1524.ZS
+    higher_is_better: false
+    aggregation: median
+    valid_min: 0
+    valid_max: 100
+    attribution: World Bank / ILO, World Development Indicators
+
+  - id: working_hours
+    name: Annual working hours
+    domain: Labour
+    description: Average annual hours worked per worker.
+    unit: hours/year
+    source: owid
+    series: annual-working-hours-per-worker
+    value_column: Working hours per worker
+    higher_is_better: null
+    aggregation: median
+    valid_min: 500
+    valid_max: 4000
+    attribution: Penn World Table (via Our World in Data)

@@ -1,0 +1,68 @@
+name: Feature request
+description: Suggest an indicator, a data source, a group, a UI improvement or an analysis feature.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the problem first, then the proposed change. Data
+        additions need a licence that permits use/redistribution in this
+        project.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      placeholder: "I want to compare ... but there is no ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should the app do? For an indicator, include the source, the exact series code/URL, units, vintage and licence.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Indicator / data source
+        - Country groups
+        - Correlation analysis
+        - UI / charts
+        - Data pipeline / refresh
+        - Documentation
+        - Packaging / distribution
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Mockups, links, example values, or why existing indicators do not cover it.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and the roadmap in CHANGELOG.md.
+          required: true
+        - label: For a data source, I checked that its licence allows this use.
+          required: false

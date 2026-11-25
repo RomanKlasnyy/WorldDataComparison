@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "worlddata"
+version = "0.1.0"
+description = "Offline desktop comparison of the latest country statistics, all-pairs correlations and country groups"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "WorldDataComparison contributors" }]
+requires-python = ">=3.11"
+keywords = [
+    "country-statistics",
+    "international-comparison",
+    "correlation",
+    "data-visualization",
+    "pyside6",
+    "world-bank",
+    "imf",
+    "our-world-in-data",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "scipy>=1.13",
+    "matplotlib>=3.9",
+    "PySide6>=6.7",
+    "pydantic>=2",
+    "PyYAML>=6",
+    "requests>=2.31",
+    "tenacity>=8",
+    "openpyxl>=3.1",
+    "pycountry>=24.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-qt>=4.4",
+    "ruff>=0.6",
+    "mypy>=1.11",
+]
+build = ["pyinstaller>=6.6"]
+
+[project.scripts]
+worlddata = "worlddata.cli:main"
+worlddata-gui = "worlddata.ui.app:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["worlddata*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501", "B008"]  # B008: Qt model overrides require QModelIndex() defaults
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+exclude = ["tests/"]

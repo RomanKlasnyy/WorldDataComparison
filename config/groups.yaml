@@ -1,0 +1,214 @@
+# Country group definitions.
+#
+# Groups are many-to-many and may overlap. `members` is an explicit ISO3 list;
+# `selector` derives membership at build time from country metadata (field) or the
+# latest value of an indicator (indicator/op/value). Mixed or multi-ethnic countries
+# can appear in several cultural groups; descriptions state the operational rule.
+#
+# Local edits from the Groups page are written to data/groups.local.yaml as
+# {group_id: {add: [...], remove: [...]}} and never modify this file.
+
+families:
+  - { id: economic, name: Economic blocs }
+  - { id: military, name: Military alliances }
+  - { id: geographic, name: Continents }
+  - { id: income, name: World Bank income tiers }
+  - { id: political, name: Political systems }
+  - { id: cultural, name: Cultural & linguistic families }
+
+groups:
+  - id: eu
+    name: European Union
+    family: economic
+    description: 27 member states as of 2025.
+    color: "#2E5EAA"
+    members: [AUT, BEL, BGR, HRV, CYP, CZE, DNK, EST, FIN, FRA, DEU, GRC, HUN, IRL, ITA, LVA, LTU, LUX, MLT, NLD, POL, PRT, ROU, SVK, SVN, ESP, SWE]
+
+  - id: eurozone
+    name: Eurozone
+    family: economic
+    description: EU member states using the euro (20 members as of 2025; Bulgaria adopts in 2026).
+    color: "#3C78C8"
+    members: [AUT, BEL, HRV, CYP, EST, FIN, FRA, DEU, GRC, IRL, ITA, LVA, LTU, LUX, MLT, NLD, PRT, SVK, SVN, ESP]
+
+  - id: usmca
+    name: USMCA
+    family: economic
+    description: United States-Mexico-Canada Agreement (formerly NAFTA).
+    color: "#6C8EBF"
+    members: [USA, CAN, MEX]
+
+  - id: mercosur
+    name: MERCOSUR
+    family: economic
+    description: Southern Common Market. Venezuela suspended since 2016; Bolivia in accession.
+    color: "#7BA05B"
+    members: [ARG, BRA, PRY, URY]
+
+  - id: asean
+    name: ASEAN
+    family: economic
+    description: Association of Southeast Asian Nations (10 members).
+    color: "#D9822B"
+    members: [BRN, KHM, IDN, LAO, MYS, MMR, PHL, SGP, THA, VNM]
+
+  - id: brics
+    name: BRICS+
+    family: economic
+    description: BRICS expanded membership as of 2025 (Saudi Arabia invited but not formalised; Argentina declined).
+    color: "#B54A4A"
+    members: [BRA, RUS, IND, CHN, ZAF, EGY, ETH, IRN, IDN, ARE]
+
+  - id: nato
+    name: NATO
+    family: military
+    description: North Atlantic Treaty Organization, 32 members as of 2024.
+    color: "#1F4E79"
+    members: [ALB, BEL, BGR, CAN, HRV, CZE, DNK, EST, FIN, FRA, DEU, GRC, HUN, ISL, ITA, LVA, LTU, LUX, MNE, NLD, MKD, NOR, POL, PRT, ROU, SVK, SVN, ESP, SWE, TUR, GBR, USA]
+
+  - id: csto
+    name: CSTO
+    family: military
+    description: Collective Security Treaty Organization (6 members; Armenia suspended participation in 2024).
+    color: "#8C4A4A"
+    members: [ARM, BLR, KAZ, KGZ, RUS, TJK]
+
+  - id: nuclear_powers
+    name: Nuclear-armed states
+    family: military
+    description: States possessing nuclear weapons (NPT-defined plus Israel, India, Pakistan, North Korea).
+    color: "#6B6B6B"
+    members: [USA, RUS, GBR, FRA, CHN, IND, PAK, ISR, PRK]
+
+  - id: africa
+    name: Africa
+    family: geographic
+    description: All entities with continent = Africa (UN M49).
+    color: "#C48A3A"
+    selector: { field: continent, equals: Africa }
+
+  - id: asia
+    name: Asia
+    family: geographic
+    description: All entities with continent = Asia (UN M49).
+    color: "#C25B5B"
+    selector: { field: continent, equals: Asia }
+
+  - id: europe
+    name: Europe
+    family: geographic
+    description: All entities with continent = Europe (UN M49).
+    color: "#4C78A8"
+    selector: { field: continent, equals: Europe }
+
+  - id: north_america
+    name: North America
+    family: geographic
+    description: All entities with continent = North America, including Central America and the Caribbean (UN M49).
+    color: "#4E9A6A"
+    selector: { field: continent, equals: North America }
+
+  - id: south_america
+    name: South America
+    family: geographic
+    description: All entities with continent = South America (UN M49).
+    color: "#8E6C88"
+    selector: { field: continent, equals: South America }
+
+  - id: oceania
+    name: Oceania
+    family: geographic
+    description: All entities with continent = Oceania (UN M49).
+    color: "#3E8E8E"
+    selector: { field: continent, equals: Oceania }
+
+  - id: high_income
+    name: High income
+    family: income
+    description: World Bank income classification (current).
+    color: "#4C78A8"
+    selector: { field: income_group, equals: High income }
+
+  - id: upper_middle_income
+    name: Upper middle income
+    family: income
+    description: World Bank income classification (current).
+    color: "#72B7B2"
+    selector: { field: income_group, equals: Upper middle income }
+
+  - id: lower_middle_income
+    name: Lower middle income
+    family: income
+    description: World Bank income classification (current).
+    color: "#E4A24C"
+    selector: { field: income_group, equals: Lower middle income }
+
+  - id: low_income
+    name: Low income
+    family: income
+    description: World Bank income classification (current).
+    color: "#B279A2"
+    selector: { field: income_group, equals: Low income }
+
+  - id: liberal_democracies
+    name: Liberal democracies
+    family: political
+    description: Countries with a V-Dem Liberal Democracy Index of 0.5 or higher in their latest available year.
+    color: "#2F7D5C"
+    selector: { indicator: vdem_liberal_democracy, op: ge, value: 0.5 }
+
+  - id: non_liberal_polities
+    name: Non-liberal polities
+    family: political
+    description: Countries with a V-Dem Liberal Democracy Index below 0.5 in their latest available year.
+    color: "#A94A4A"
+    selector: { indicator: vdem_liberal_democracy, op: lt, value: 0.5 }
+
+  - id: slavic
+    name: Slavic states
+    family: cultural
+    description: Countries where a Slavic language is the principal official language. Operational, not ethnic, definition.
+    color: "#7E57C2"
+    members: [BLR, BIH, BGR, HRV, CZE, MKD, MNE, POL, RUS, SRB, SVK, SVN, UKR]
+
+  - id: germanic
+    name: Germanic-language states
+    family: cultural
+    description: Countries where a Germanic language is the dominant language. Includes mixed/partial cases such as Belgium and Ireland.
+    color: "#5C8D89"
+    members: [AUT, BEL, CHE, DEU, DNK, GBR, IRL, ISL, LUX, NLD, NOR, SWE]
+
+  - id: romance
+    name: Romance-language states
+    family: cultural
+    description: Countries where a Romance language is an official or dominant language.
+    color: "#E08A5A"
+    members: [AND, BEL, CHE, FRA, ITA, LUX, MDA, MCO, PRT, ROU, SMR, ESP, VAT]
+
+  - id: nordic
+    name: Nordic countries
+    family: cultural
+    description: Denmark, Finland, Iceland, Norway and Sweden.
+    color: "#3F7FA6"
+    members: [DNK, FIN, ISL, NOR, SWE]
+
+  - id: anglophone
+    name: Anglophone core
+    family: cultural
+    description: Majority English-speaking high-income democracies.
+    color: "#4A6FA5"
+    members: [AUS, CAN, GBR, IRL, NZL, USA]
+
+  - id: arab_league
+    name: Arab League
+    family: cultural
+    description: 22 member states of the League of Arab States.
+    color: "#8C9E4A"
+    members: [DZA, BHR, COM, DJI, EGY, IRQ, JOR, KWT, LBN, LBY, MAR, MRT, OMN, PSE, QAT, SAU, SOM, SDN, SYR, TUN, ARE, YEM]
+
+  - id: lusophone
+    name: Lusophone countries
+    family: cultural
+    description: Members of the Community of Portuguese Language Countries (CPLP).
+    color: "#2F8F6B"
+    members: [AGO, BRA, CPV, GNQ, GNB, MOZ, PRT, STP, TLS]

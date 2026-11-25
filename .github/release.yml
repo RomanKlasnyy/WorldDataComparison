@@ -1,0 +1,26 @@
+changelog:
+  categories:
+    - title: Features
+      labels:
+        - enhancement
+        - feature
+    - title: Bug fixes
+      labels:
+        - bug
+    - title: Data and sources
+      labels:
+        - data
+    - title: Documentation
+      labels:
+        - documentation
+    - title: Build and CI
+      labels:
+        - ci
+        - build
+        - dependencies
+    - title: Other changes
+      labels:
+        - "*"
+  exclude:
+    labels:
+      - skip-changelog

@@ -1,0 +1,53 @@
+WorldDataComparison — third-party data notice
+=============================================
+
+This application bundles or derives statistical data from the sources below. Upstream
+terms apply to the data; the application code is separate. Source-level licence and
+redistribution flags are stored in config/sources.yaml and shown in Data quality → Sources.
+
+This project is an independent tool. It is not affiliated with, endorsed by, or
+sponsored by the World Bank, the International Monetary Fund, the United Nations,
+Our World in Data, Transparency International, V-Dem, or any other data provider.
+Trademarks and series names belong to their respective owners. Figures are provided
+as-is for analysis; verify material claims against the upstream source.
+
+World Bank — World Development Indicators and Worldwide Governance Indicators
+  https://data.worldbank.org/
+  https://www.worldbank.org/en/publication/worldwide-governance-indicators
+  Licence: CC BY 4.0. Attribution: World Bank.
+
+International Monetary Fund — World Economic Outlook (via IMF DataMapper)
+  https://www.imf.org/en/Publications/WEO
+  Licence: IMF terms of use, free with attribution. Attribution: International Monetary Fund.
+  Only historical years are imported; WEO projections are excluded.
+
+Our World in Data
+  https://ourworldindata.org/
+  Licence: CC BY 4.0 for OWID processing; upstream series keep their own terms.
+  Attribution: Our World in Data, based on the upstream sources listed per indicator.
+
+  Indicators delivered through OWID and their upstream producers:
+    Human Development Index, expected years of schooling, Gender Inequality Index — UNDP
+    Mean years of schooling — UNDP / Barro-Lee
+    Liberal and electoral democracy indices — V-Dem Institute
+    Corruption Perceptions Index — Transparency International
+    Press Freedom Index — Reporters Without Borders
+    Self-reported life satisfaction — World Happiness Report / Gallup
+    Voter turnout — International IDEA / V-Dem
+    Homicide rate — UNODC
+    Median age — UN World Population Prospects
+    Working hours — Penn World Table
+
+  V-Dem data is distributed under CC BY-SA 4.0; Transparency International's CPI has
+  its own attribution and reuse terms. Review those terms before redistributing a public
+  bundle that includes these series.
+
+Not bundled (manual import only, not redistributed):
+  OECD PISA, Freedom House, Yale EPI, ND-GAIN, IEP Global Peace Index,
+  Social Progress Imperative, and the EIU Democracy Index (commercially licensed).
+
+Software:
+  PySide6 (LGPL v3), pandas (BSD-3), NumPy (BSD-3), SciPy (BSD-3),
+  matplotlib (PSF-based), pydantic (MIT), PyYAML (MIT), requests (Apache-2.0),
+  pycountry (LGPL-2.1), openpyxl (MIT), PyInstaller (GPL-2.0 with exception).
+  See the respective packages for full licence texts.

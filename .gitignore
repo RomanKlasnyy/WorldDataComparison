@@ -1,0 +1,61 @@
+# ---------------------------------------------------------------------------
+# Generated data and local state (never committed; rebuild with
+# scripts/refresh_data.py). Releases attach the built portable zip instead.
+# ---------------------------------------------------------------------------
+data/raw/
+data/*.sqlite
+data/*.sqlite-shm
+data/*.sqlite-wal
+data/*.sqlite-journal
+data/manifest.json
+data/quality_report.csv
+data/rejected.csv
+data/unresolved.csv
+data/skipped_entities.csv
+data/settings.json
+data/groups.local.yaml
+data/cache/
+data/ui_*.png
+
+# Build output
+build/
+dist/
+*.zip
+selftest.log
+*.whl
+*.tar.gz
+*.tgz
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Editors, tool state and OS
+.idea/
+.vscode/
+.kilo/
+*.code-workspace
+debug/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Local imports, scratch and logs
+imports/
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+.env
+.env.*

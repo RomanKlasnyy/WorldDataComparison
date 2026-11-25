@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use WorldDataComparison in academic or analytical work, please cite it using this metadata."
+title: WorldDataComparison
+abstract: >-
+  An offline desktop application for comparing the latest available statistics
+  of 197 countries, computing all pairwise correlations with robustness and
+  confounder controls, and comparing economic, military, geographic, income,
+  political and cultural country groups.
+authors:
+  - name: "WorldDataComparison contributors"
+version: 0.1.0
+date-released: "2026-11-25"
+license: MIT
+keywords:
+  - country statistics
+  - international comparison
+  - correlation analysis
+  - data visualization
+  - PySide6
+  - reproducible research
+  - World Bank
+  - IMF
+  - Our World in Data

@@ -1,0 +1,2191 @@
+countries:
+- iso3: AFG
+  name: Afghanistan
+  official_name: Afghanistan
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Southern Asia
+  continent: Asia
+  income_group: Low income
+  is_default: true
+- iso3: ALB
+  name: Albania
+  official_name: Albania
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: Upper middle income
+  is_default: true
+- iso3: DZA
+  name: Algeria
+  official_name: Algeria
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Northern Africa
+  continent: Africa
+  income_group: Upper middle income
+  is_default: true
+- iso3: ASM
+  name: American Samoa
+  official_name: American Samoa
+  entity_type: territory
+  un_member: false
+  region: East Asia & Pacific
+  subregion: Polynesia
+  continent: Oceania
+  income_group: High income
+  is_default: false
+- iso3: AND
+  name: Andorra
+  official_name: Andorra
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: AGO
+  name: Angola
+  official_name: Angola
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: ATG
+  name: Antigua and Barbuda
+  official_name: Antigua and Barbuda
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: true
+- iso3: ARG
+  name: Argentina
+  official_name: Argentina
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: Upper middle income
+  is_default: true
+- iso3: ARM
+  name: Armenia
+  official_name: Armenia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: ABW
+  name: Aruba
+  official_name: Aruba
+  entity_type: territory
+  un_member: false
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: AUS
+  name: Australia
+  official_name: Australia
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Australia and New Zealand
+  continent: Oceania
+  income_group: High income
+  is_default: true
+- iso3: AUT
+  name: Austria
+  official_name: Austria
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: AZE
+  name: Azerbaijan
+  official_name: Azerbaijan
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: BHS
+  name: Bahamas
+  official_name: Bahamas
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: true
+- iso3: BHR
+  name: Bahrain
+  official_name: Bahrain
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: BGD
+  name: Bangladesh
+  official_name: Bangladesh
+  entity_type: state
+  un_member: true
+  region: South Asia
+  subregion: Southern Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: BRB
+  name: Barbados
+  official_name: Barbados
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: true
+- iso3: BLR
+  name: Belarus
+  official_name: Belarus
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: Upper middle income
+  is_default: true
+- iso3: BEL
+  name: Belgium
+  official_name: Belgium
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: BLZ
+  name: Belize
+  official_name: Belize
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: BEN
+  name: Benin
+  official_name: Benin
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: BMU
+  name: Bermuda
+  official_name: Bermuda
+  entity_type: territory
+  un_member: false
+  region: North America
+  subregion: Northern America
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: BTN
+  name: Bhutan
+  official_name: Bhutan
+  entity_type: state
+  un_member: true
+  region: South Asia
+  subregion: Southern Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: BOL
+  name: Bolivia
+  official_name: Bolivia (Plurinational State of)
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: Lower middle income
+  is_default: true
+- iso3: BIH
+  name: Bosnia and Herzegovina
+  official_name: Bosnia and Herzegovina
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: Upper middle income
+  is_default: true
+- iso3: BWA
+  name: Botswana
+  official_name: Botswana
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Upper middle income
+  is_default: true
+- iso3: BRA
+  name: Brazil
+  official_name: Brazil
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: Upper middle income
+  is_default: true
+- iso3: VGB
+  name: British Virgin Islands
+  official_name: British Virgin Islands
+  entity_type: territory
+  un_member: false
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: BRN
+  name: Brunei
+  official_name: Brunei Darussalam
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: BGR
+  name: Bulgaria
+  official_name: Bulgaria
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: BFA
+  name: Burkina Faso
+  official_name: Burkina Faso
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: BDI
+  name: Burundi
+  official_name: Burundi
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: CPV
+  name: Cabo Verde
+  official_name: Cabo Verde
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Upper middle income
+  is_default: true
+- iso3: KHM
+  name: Cambodia
+  official_name: Cambodia
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: CMR
+  name: Cameroon
+  official_name: Cameroon
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: CAN
+  name: Canada
+  official_name: Canada
+  entity_type: state
+  un_member: true
+  region: North America
+  subregion: Northern America
+  continent: North America
+  income_group: High income
+  is_default: true
+- iso3: CYM
+  name: Cayman Islands
+  official_name: Cayman Islands
+  entity_type: territory
+  un_member: false
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: CAF
+  name: Central African Republic
+  official_name: Central African Republic
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: TCD
+  name: Chad
+  official_name: Chad
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: CHI
+  name: Channel Islands
+  official_name: Channel Islands
+  entity_type: territory
+  un_member: false
+  region: Europe & Central Asia
+  subregion: ''
+  continent: Europe
+  income_group: High income
+  is_default: false
+- iso3: CHL
+  name: Chile
+  official_name: Chile
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: High income
+  is_default: true
+- iso3: CHN
+  name: China
+  official_name: China
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Eastern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: COL
+  name: Colombia
+  official_name: Colombia
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: Upper middle income
+  is_default: true
+- iso3: COM
+  name: Comoros
+  official_name: Comoros
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: CRI
+  name: Costa Rica
+  official_name: Costa Rica
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: true
+- iso3: HRV
+  name: Croatia
+  official_name: Croatia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: CUB
+  name: Cuba
+  official_name: Cuba
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: CUW
+  name: Curaçao
+  official_name: Curaçao
+  entity_type: territory
+  un_member: false
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: CYP
+  name: Cyprus
+  official_name: Cyprus
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Asia
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: CZE
+  name: Czechia
+  official_name: Czechia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: CIV
+  name: Côte d'Ivoire
+  official_name: Ivory Coast
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: DNK
+  name: Denmark
+  official_name: Denmark
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: DJI
+  name: Djibouti
+  official_name: Djibouti
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: DMA
+  name: Dominica
+  official_name: Dominica
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: DOM
+  name: Dominican Republic
+  official_name: Dominican Republic
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: COD
+  name: DR Congo
+  official_name: Democratic Republic of the Congo
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: ECU
+  name: Ecuador
+  official_name: Ecuador
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: Upper middle income
+  is_default: true
+- iso3: EGY
+  name: Egypt
+  official_name: Egypt
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Northern Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: SLV
+  name: El Salvador
+  official_name: El Salvador
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: GNQ
+  name: Equatorial Guinea
+  official_name: Equatorial Guinea
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Upper middle income
+  is_default: true
+- iso3: ERI
+  name: Eritrea
+  official_name: Eritrea
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: EST
+  name: Estonia
+  official_name: Estonia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: SWZ
+  name: Eswatini
+  official_name: Eswatini
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: ETH
+  name: Ethiopia
+  official_name: Ethiopia
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: FRO
+  name: Faroe Islands
+  official_name: Faroe Islands
+  entity_type: territory
+  un_member: false
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: false
+- iso3: FJI
+  name: Fiji
+  official_name: Fiji
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Melanesia
+  continent: Oceania
+  income_group: Upper middle income
+  is_default: true
+- iso3: FIN
+  name: Finland
+  official_name: Finland
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: FRA
+  name: France
+  official_name: France
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: PYF
+  name: French Polynesia
+  official_name: French Polynesia
+  entity_type: territory
+  un_member: false
+  region: East Asia & Pacific
+  subregion: Polynesia
+  continent: Oceania
+  income_group: High income
+  is_default: false
+- iso3: GAB
+  name: Gabon
+  official_name: Gabon
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Upper middle income
+  is_default: true
+- iso3: GMB
+  name: Gambia
+  official_name: Gambia
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: GEO
+  name: Georgia
+  official_name: Georgia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: DEU
+  name: Germany
+  official_name: Germany
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: GHA
+  name: Ghana
+  official_name: Ghana
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: GIB
+  name: Gibraltar
+  official_name: Gibraltar
+  entity_type: territory
+  un_member: false
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: false
+- iso3: GRC
+  name: Greece
+  official_name: Greece
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: GRL
+  name: Greenland
+  official_name: Greenland
+  entity_type: territory
+  un_member: false
+  region: Europe & Central Asia
+  subregion: Northern America
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: GRD
+  name: Grenada
+  official_name: Grenada
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: GUM
+  name: Guam
+  official_name: Guam
+  entity_type: territory
+  un_member: false
+  region: East Asia & Pacific
+  subregion: Micronesia
+  continent: Oceania
+  income_group: High income
+  is_default: false
+- iso3: GTM
+  name: Guatemala
+  official_name: Guatemala
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: GIN
+  name: Guinea
+  official_name: Guinea
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: GNB
+  name: Guinea-Bissau
+  official_name: Guinea-Bissau
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: GUY
+  name: Guyana
+  official_name: Guyana
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: High income
+  is_default: true
+- iso3: HTI
+  name: Haiti
+  official_name: Haiti
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Lower middle income
+  is_default: true
+- iso3: HND
+  name: Honduras
+  official_name: Honduras
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Lower middle income
+  is_default: true
+- iso3: HKG
+  name: Hong Kong
+  official_name: China, Hong Kong Special Administrative Region
+  entity_type: territory
+  un_member: false
+  region: East Asia & Pacific
+  subregion: Eastern Asia
+  continent: Asia
+  income_group: High income
+  is_default: false
+- iso3: HUN
+  name: Hungary
+  official_name: Hungary
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: ISL
+  name: Iceland
+  official_name: Iceland
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: IND
+  name: India
+  official_name: India
+  entity_type: state
+  un_member: true
+  region: South Asia
+  subregion: Southern Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: IDN
+  name: Indonesia
+  official_name: Indonesia
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: IRN
+  name: Iran
+  official_name: Iran (Islamic Republic of)
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Southern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: IRQ
+  name: Iraq
+  official_name: Iraq
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: IRL
+  name: Ireland
+  official_name: Ireland
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: IMN
+  name: Isle of Man
+  official_name: Isle of Man
+  entity_type: territory
+  un_member: false
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: false
+- iso3: ISR
+  name: Israel
+  official_name: Israel
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: ITA
+  name: Italy
+  official_name: Italy
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: JAM
+  name: Jamaica
+  official_name: Jamaica
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: JPN
+  name: Japan
+  official_name: Japan
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Eastern Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: JOR
+  name: Jordan
+  official_name: Jordan
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: KAZ
+  name: Kazakhstan
+  official_name: Kazakhstan
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Central Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: KEN
+  name: Kenya
+  official_name: Kenya
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: KIR
+  name: Kiribati
+  official_name: Kiribati
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Micronesia
+  continent: Oceania
+  income_group: Lower middle income
+  is_default: true
+- iso3: XKX
+  name: Kosovo
+  official_name: Kosovo
+  entity_type: disputed
+  un_member: false
+  region: Europe & Central Asia
+  subregion: ''
+  continent: Europe
+  income_group: Upper middle income
+  is_default: true
+- iso3: KWT
+  name: Kuwait
+  official_name: Kuwait
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: KGZ
+  name: Kyrgyzstan
+  official_name: Kyrgyzstan
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Central Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: LAO
+  name: Laos
+  official_name: Lao People's Democratic Republic
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: LVA
+  name: Latvia
+  official_name: Latvia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: LBN
+  name: Lebanon
+  official_name: Lebanon
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: LSO
+  name: Lesotho
+  official_name: Lesotho
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: LBR
+  name: Liberia
+  official_name: Liberia
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: LBY
+  name: Libya
+  official_name: Libya
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Northern Africa
+  continent: Africa
+  income_group: Upper middle income
+  is_default: true
+- iso3: LIE
+  name: Liechtenstein
+  official_name: Liechtenstein
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: LTU
+  name: Lithuania
+  official_name: Lithuania
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: LUX
+  name: Luxembourg
+  official_name: Luxembourg
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: MAC
+  name: Macao
+  official_name: China, Macao Special Administrative Region
+  entity_type: territory
+  un_member: false
+  region: East Asia & Pacific
+  subregion: Eastern Asia
+  continent: Asia
+  income_group: High income
+  is_default: false
+- iso3: MDG
+  name: Madagascar
+  official_name: Madagascar
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: MWI
+  name: Malawi
+  official_name: Malawi
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: MYS
+  name: Malaysia
+  official_name: Malaysia
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: MDV
+  name: Maldives
+  official_name: Maldives
+  entity_type: state
+  un_member: true
+  region: South Asia
+  subregion: Southern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: MLI
+  name: Mali
+  official_name: Mali
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: MLT
+  name: Malta
+  official_name: Malta
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: MHL
+  name: Marshall Islands
+  official_name: Marshall Islands
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Micronesia
+  continent: Oceania
+  income_group: Upper middle income
+  is_default: true
+- iso3: MRT
+  name: Mauritania
+  official_name: Mauritania
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: MUS
+  name: Mauritius
+  official_name: Mauritius
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Upper middle income
+  is_default: true
+- iso3: MEX
+  name: Mexico
+  official_name: Mexico
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: FSM
+  name: Micronesia
+  official_name: Micronesia (Federated States of)
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Micronesia
+  continent: Oceania
+  income_group: Upper middle income
+  is_default: true
+- iso3: MDA
+  name: Moldova
+  official_name: Republic of Moldova
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: Upper middle income
+  is_default: true
+- iso3: MCO
+  name: Monaco
+  official_name: Monaco
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: MNG
+  name: Mongolia
+  official_name: Mongolia
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Eastern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: MNE
+  name: Montenegro
+  official_name: Montenegro
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: Upper middle income
+  is_default: true
+- iso3: MAR
+  name: Morocco
+  official_name: Morocco
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Northern Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: MOZ
+  name: Mozambique
+  official_name: Mozambique
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: MMR
+  name: Myanmar
+  official_name: Myanmar
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: NAM
+  name: Namibia
+  official_name: Namibia
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: NRU
+  name: Nauru
+  official_name: Nauru
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Micronesia
+  continent: Oceania
+  income_group: High income
+  is_default: true
+- iso3: NPL
+  name: Nepal
+  official_name: Nepal
+  entity_type: state
+  un_member: true
+  region: South Asia
+  subregion: Southern Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: NLD
+  name: Netherlands
+  official_name: Netherlands
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: NCL
+  name: New Caledonia
+  official_name: New Caledonia
+  entity_type: territory
+  un_member: false
+  region: East Asia & Pacific
+  subregion: Melanesia
+  continent: Oceania
+  income_group: High income
+  is_default: false
+- iso3: NZL
+  name: New Zealand
+  official_name: New Zealand
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Australia and New Zealand
+  continent: Oceania
+  income_group: High income
+  is_default: true
+- iso3: NIC
+  name: Nicaragua
+  official_name: Nicaragua
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Lower middle income
+  is_default: true
+- iso3: NER
+  name: Niger
+  official_name: Niger
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: NGA
+  name: Nigeria
+  official_name: Nigeria
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: PRK
+  name: North Korea
+  official_name: Democratic People's Republic of Korea
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Eastern Asia
+  continent: Asia
+  income_group: Low income
+  is_default: true
+- iso3: MKD
+  name: North Macedonia
+  official_name: North Macedonia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: Upper middle income
+  is_default: true
+- iso3: MNP
+  name: Northern Mariana Islands
+  official_name: Northern Mariana Islands
+  entity_type: territory
+  un_member: false
+  region: East Asia & Pacific
+  subregion: Micronesia
+  continent: Oceania
+  income_group: High income
+  is_default: false
+- iso3: NOR
+  name: Norway
+  official_name: Norway
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: OMN
+  name: Oman
+  official_name: Oman
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: PAK
+  name: Pakistan
+  official_name: Pakistan
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Southern Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: PLW
+  name: Palau
+  official_name: Palau
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Micronesia
+  continent: Oceania
+  income_group: High income
+  is_default: true
+- iso3: PSE
+  name: Palestine
+  official_name: State of Palestine
+  entity_type: observer
+  un_member: false
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: PAN
+  name: Panama
+  official_name: Panama
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: true
+- iso3: PNG
+  name: Papua New Guinea
+  official_name: Papua New Guinea
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Melanesia
+  continent: Oceania
+  income_group: Lower middle income
+  is_default: true
+- iso3: PRY
+  name: Paraguay
+  official_name: Paraguay
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: Upper middle income
+  is_default: true
+- iso3: PER
+  name: Peru
+  official_name: Peru
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: Upper middle income
+  is_default: true
+- iso3: PHL
+  name: Philippines
+  official_name: Philippines
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: POL
+  name: Poland
+  official_name: Poland
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: PRT
+  name: Portugal
+  official_name: Portugal
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: PRI
+  name: Puerto Rico (US)
+  official_name: Puerto Rico
+  entity_type: territory
+  un_member: false
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: QAT
+  name: Qatar
+  official_name: Qatar
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: COG
+  name: Republic of the Congo
+  official_name: Congo
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: ROU
+  name: Romania
+  official_name: Romania
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: RUS
+  name: Russia
+  official_name: Russian Federation
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: RWA
+  name: Rwanda
+  official_name: Rwanda
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: KNA
+  name: Saint Kitts and Nevis
+  official_name: Saint Kitts and Nevis
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: true
+- iso3: LCA
+  name: Saint Lucia
+  official_name: Saint Lucia
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: MAF
+  name: Saint Martin
+  official_name: Saint Martin (French Part)
+  entity_type: territory
+  un_member: false
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: VCT
+  name: Saint Vincent and the Grenadines
+  official_name: Saint Vincent and the Grenadines
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: Upper middle income
+  is_default: true
+- iso3: WSM
+  name: Samoa
+  official_name: Samoa
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Polynesia
+  continent: Oceania
+  income_group: Upper middle income
+  is_default: true
+- iso3: SMR
+  name: San Marino
+  official_name: San Marino
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: SAU
+  name: Saudi Arabia
+  official_name: Saudi Arabia
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: SEN
+  name: Senegal
+  official_name: Senegal
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: SRB
+  name: Serbia
+  official_name: Serbia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: Upper middle income
+  is_default: true
+- iso3: SYC
+  name: Seychelles
+  official_name: Seychelles
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: High income
+  is_default: true
+- iso3: SLE
+  name: Sierra Leone
+  official_name: Sierra Leone
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: SGP
+  name: Singapore
+  official_name: Singapore
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: SXM
+  name: Sint Maarten (Dutch part)
+  official_name: Sint Maarten (Dutch part)
+  entity_type: territory
+  un_member: false
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: SVK
+  name: Slovakia
+  official_name: Slovakia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: SVN
+  name: Slovenia
+  official_name: Slovenia
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: SLB
+  name: Solomon Islands
+  official_name: Solomon Islands
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Melanesia
+  continent: Oceania
+  income_group: Lower middle income
+  is_default: true
+- iso3: SOM
+  name: Somalia
+  official_name: Somalia
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: ZAF
+  name: South Africa
+  official_name: South Africa
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Upper middle income
+  is_default: true
+- iso3: KOR
+  name: South Korea
+  official_name: Republic of Korea
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Eastern Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: SSD
+  name: South Sudan
+  official_name: South Sudan
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: ESP
+  name: Spain
+  official_name: Spain
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: LKA
+  name: Sri Lanka
+  official_name: Sri Lanka
+  entity_type: state
+  un_member: true
+  region: South Asia
+  subregion: Southern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: SDN
+  name: Sudan
+  official_name: Sudan
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Northern Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: SUR
+  name: Suriname
+  official_name: Suriname
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: Upper middle income
+  is_default: true
+- iso3: SWE
+  name: Sweden
+  official_name: Sweden
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: CHE
+  name: Switzerland
+  official_name: Switzerland
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: SYR
+  name: Syria
+  official_name: Syrian Arab Republic
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: Low income
+  is_default: true
+- iso3: STP
+  name: São Tomé and Príncipe
+  official_name: Sao Tome and Principe
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: TWN
+  name: Taiwan
+  official_name: Republic of China (Taiwan)
+  entity_type: disputed
+  un_member: false
+  region: East Asia & Pacific
+  subregion: Eastern Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: TJK
+  name: Tajikistan
+  official_name: Tajikistan
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Central Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: TZA
+  name: Tanzania
+  official_name: United Republic of Tanzania
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: THA
+  name: Thailand
+  official_name: Thailand
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: TLS
+  name: Timor-Leste
+  official_name: Timor-Leste
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Oceania
+  income_group: Lower middle income
+  is_default: true
+- iso3: TGO
+  name: Togo
+  official_name: Togo
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: TON
+  name: Tonga
+  official_name: Tonga
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Polynesia
+  continent: Oceania
+  income_group: Upper middle income
+  is_default: true
+- iso3: TTO
+  name: Trinidad and Tobago
+  official_name: Trinidad and Tobago
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: true
+- iso3: TUN
+  name: Tunisia
+  official_name: Tunisia
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Northern Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: TKM
+  name: Turkmenistan
+  official_name: Turkmenistan
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Central Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: TCA
+  name: Turks and Caicos Islands
+  official_name: Turks and Caicos Islands
+  entity_type: territory
+  un_member: false
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: TUV
+  name: Tuvalu
+  official_name: Tuvalu
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Polynesia
+  continent: Oceania
+  income_group: Upper middle income
+  is_default: true
+- iso3: TUR
+  name: Türkiye
+  official_name: Türkiye
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Western Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: VIR
+  name: U.S. Virgin Islands
+  official_name: United States Virgin Islands
+  entity_type: territory
+  un_member: false
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: North America
+  income_group: High income
+  is_default: false
+- iso3: UGA
+  name: Uganda
+  official_name: Uganda
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Low income
+  is_default: true
+- iso3: UKR
+  name: Ukraine
+  official_name: Ukraine
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Eastern Europe
+  continent: Europe
+  income_group: Upper middle income
+  is_default: true
+- iso3: ARE
+  name: United Arab Emirates
+  official_name: United Arab Emirates
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: High income
+  is_default: true
+- iso3: GBR
+  name: United Kingdom
+  official_name: United Kingdom of Great Britain and Northern Ireland
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Northern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: USA
+  name: United States
+  official_name: United States of America
+  entity_type: state
+  un_member: true
+  region: North America
+  subregion: Northern America
+  continent: North America
+  income_group: High income
+  is_default: true
+- iso3: URY
+  name: Uruguay
+  official_name: Uruguay
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: High income
+  is_default: true
+- iso3: UZB
+  name: Uzbekistan
+  official_name: Uzbekistan
+  entity_type: state
+  un_member: true
+  region: Europe & Central Asia
+  subregion: Central Asia
+  continent: Asia
+  income_group: Lower middle income
+  is_default: true
+- iso3: VUT
+  name: Vanuatu
+  official_name: Vanuatu
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: Melanesia
+  continent: Oceania
+  income_group: Lower middle income
+  is_default: true
+- iso3: VAT
+  name: Vatican City
+  official_name: Holy See
+  entity_type: observer
+  un_member: false
+  region: Europe & Central Asia
+  subregion: Southern Europe
+  continent: Europe
+  income_group: High income
+  is_default: true
+- iso3: VEN
+  name: Venezuela
+  official_name: Venezuela (Bolivarian Republic of)
+  entity_type: state
+  un_member: true
+  region: Latin America & Caribbean
+  subregion: Latin America and the Caribbean
+  continent: South America
+  income_group: Lower middle income
+  is_default: true
+- iso3: VNM
+  name: Vietnam
+  official_name: Viet Nam
+  entity_type: state
+  un_member: true
+  region: East Asia & Pacific
+  subregion: South-eastern Asia
+  continent: Asia
+  income_group: Upper middle income
+  is_default: true
+- iso3: YEM
+  name: Yemen
+  official_name: Yemen
+  entity_type: state
+  un_member: true
+  region: Middle East, North Africa, Afghanistan & Pakistan
+  subregion: Western Asia
+  continent: Asia
+  income_group: Low income
+  is_default: true
+- iso3: ZMB
+  name: Zambia
+  official_name: Zambia
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true
+- iso3: ZWE
+  name: Zimbabwe
+  official_name: Zimbabwe
+  entity_type: state
+  un_member: true
+  region: Sub-Saharan Africa
+  subregion: Sub-Saharan Africa
+  continent: Africa
+  income_group: Lower middle income
+  is_default: true

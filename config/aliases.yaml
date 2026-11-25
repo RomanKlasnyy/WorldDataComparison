@@ -1,0 +1,183 @@
+# Source-specific name and code aliases. Resolution order:
+#   1. ISO3 code in countries.yaml
+#   2. code_aliases below (e.g. OWID pseudo-codes)
+#   3. aliases below, keyed by ISO3 (normalized: casefold, strip accents/punctuation)
+#   4. normalized match against the country display name and official name
+#
+# Block lists are used deliberately: flow lists ([a, b]) split on commas and would
+# break names such as "Korea, Rep.".
+code_aliases:
+  OWID_KOS: XKX
+  OWID_TWN: TWN
+  OWID_PSE: PSE
+  OWID_VAT: VAT
+
+aliases:
+  TUR:
+    - Turkey
+    - Turkiye
+    - Türkiye
+    - Republic of Türkiye
+  CIV:
+    - Ivory Coast
+    - Cote d Ivoire
+    - Côte d'Ivoire
+  CZE:
+    - Czech Republic
+    - Czechia
+  KOR:
+    - Korea, Rep.
+    - Republic of Korea
+    - South Korea
+    - Korea South
+  PRK:
+    - Korea, Dem. People's Rep.
+    - Democratic People's Republic of Korea
+    - North Korea
+    - Korea North
+  RUS:
+    - Russian Federation
+    - Russia
+  VNM:
+    - Viet Nam
+    - Vietnam
+  LAO:
+    - Lao PDR
+    - Laos
+  SYR:
+    - Syrian Arab Republic
+    - Syria
+  IRN:
+    - Iran, Islamic Rep.
+    - Iran (Islamic Republic of)
+    - Iran
+  EGY:
+    - Egypt, Arab Rep.
+    - Egypt
+  YEM:
+    - Yemen, Rep.
+    - Yemen
+  VEN:
+    - Venezuela, RB
+    - Venezuela (Bolivarian Republic of)
+    - Venezuela
+  BOL:
+    - Bolivia (Plurinational State of)
+    - Bolivia
+  TZA:
+    - United Republic of Tanzania
+    - Tanzania
+  MDA:
+    - Republic of Moldova
+    - Moldova
+  BRN:
+    - Brunei Darussalam
+    - Brunei
+  CPV:
+    - Cape Verde
+    - Cabo Verde
+  SWZ:
+    - Swaziland
+    - Eswatini
+  MKD:
+    - Macedonia
+    - Macedonia, the former Yugoslav Republic of
+    - North Macedonia
+  COD:
+    - Congo, Dem. Rep.
+    - Democratic Republic of the Congo
+    - Congo - Kinshasa
+    - DR Congo
+    - DRC
+  COG:
+    - Congo, Rep.
+    - Republic of the Congo
+    - Congo - Brazzaville
+    - Congo
+  GMB:
+    - Gambia, The
+    - Gambia
+  BHS:
+    - Bahamas, The
+    - Bahamas
+  HKG:
+    - Hong Kong SAR, China
+    - Hong Kong
+  MAC:
+    - Macao SAR, China
+    - Macao
+    - Macau
+  PSE:
+    - West Bank and Gaza
+    - Palestine, State of
+    - occupied Palestinian territory
+  TWN:
+    - Taiwan, Province of China
+    - Taiwan
+  VAT:
+    - Holy See
+    - Vatican City
+    - Vatican
+  USA:
+    - United States of America
+    - United States
+    - US
+    - USA
+  GBR:
+    - United Kingdom
+    - UK
+    - Great Britain
+  ARE:
+    - United Arab Emirates
+    - UAE
+  STP:
+    - Sao Tome and Principe
+    - São Tomé and Príncipe
+  TLS:
+    - East Timor
+    - Timor-Leste
+  MMR:
+    - Burma
+    - Myanmar
+  NRU:
+    - Naoero
+    - Nauru
+  CUW:
+    - Curacao
+    - Curaçao
+  FSM:
+    - Micronesia, Fed. Sts.
+    - Federated States of Micronesia
+    - Micronesia
+  VCT:
+    - St. Vincent and the Grenadines
+    - Saint Vincent and the Grenadines
+  KNA:
+    - St. Kitts and Nevis
+    - Saint Kitts and Nevis
+  LCA:
+    - St. Lucia
+    - Saint Lucia
+  MAF:
+    - St. Martin (French part)
+    - Saint Martin
+  VIR:
+    - Virgin Islands (U.S.)
+    - U.S. Virgin Islands
+  ATG:
+    - Antigua and Barbuda
+    - Antigua & Barbuda
+  BIH:
+    - Bosnia and Herzegovina
+    - Bosnia
+  DOM:
+    - Dominican Republic
+  SDN:
+    - Sudan
+  SSD:
+    - South Sudan
+  CAF:
+    - Central African Republic
+  XKX:
+    - Kosovo
+    - Republic of Kosovo
